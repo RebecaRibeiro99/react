@@ -53,6 +53,7 @@
 //   );
 // }
 import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {ComponentePai} from "./Pages2/ComponentePai";
 function App () {
   return (
