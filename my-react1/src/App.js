@@ -1,25 +1,64 @@
-import logo from './logo.svg';
-import './App.css';
+// import { useState } from "react";
+// import { useState, userEffect} from "react";
 
-function App() {
+// function App() {
+//   const [nome, steNome] = useState()
+
+//   const handleNome = () =>{
+//     console.log("nome:", nome)
+//     if(nome ==="Fulano"){
+//   setNome("")
+//   }else{
+//     setNome("Fulano")
+//   }
+// }
+//   return (
+//    <>
+//     <h1> Boa Noite {nome}</h1>
+//     <button onClick={handleNome}>Clique aqui</button>
+//     </>
+//   );
+// }
+
+// export default App;
+
+// function App() {
+//   const [nome, steNome] = useState(0)
+
+//   userEffect(()=>{
+//     document.title = "Você clicou ${count} vezes";
+//   )
+//   }
+//   return (
+//         <div>
+//          <p> Você Clicou {count}</p>
+//          <button onClick={() => setCount(count + 1 )}>
+//            Clique aqui
+//          </button>
+//          </div>
+//        );
+// }
+// import React from "react";
+// import {ComponentePai} from "./Pages/ComponentePai";
+// import {IndiretaPai} from "./Pages/IndiretaPai"
+// import {Input} from "./Pages/Input"
+
+// function App () {
+//   return (
+//     <>
+//       <ComponentePai/>
+//       <IndiretaPai/>
+//       <Input/>
+//     </>
+//   );
+// }
+import React from "react";
+import {ComponentePai} from "./Pages2/ComponentePai";
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+        <>
+          <ComponentePai/>
+         </>
+       );
+   }
 export default App;
