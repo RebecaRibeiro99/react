@@ -5,7 +5,7 @@ export const RenderizacaoCondicional = () => {
     const [isLogado, setIsLogado] = useState(false)
 
     function SaudacaoUsuario() {
-        return (<h1>Bem vindo de Volta!</h1>)
+        return (<h1 >Bem vindo de Volta!</h1>)
     }
 
     function SaudacaoVisitante() {
