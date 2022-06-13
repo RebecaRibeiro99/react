@@ -52,14 +52,25 @@
 //     </>
 //   );
 // }
+// import React from "react";
+// import {AdicionarLista} from "./Pages/AdicionarLista";
+// function App () {
+//   return (
+//         <>
+//           <AdicionarLista/>
+//          </>
+//        );
+//    }
+// export default App;
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import {ComponentePai} from "./Pages2/ComponentePai";
-function App () {
+import {Root} from "./Routes/Root"
+
+function App() {
   return (
-        <>
-          <ComponentePai/>
-         </>
-       );
-   }
+    <>
+      <Root/>
+    </>
+  );
+}
+
 export default App;
