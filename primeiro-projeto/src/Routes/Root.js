@@ -1,20 +1,14 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "../Pages/Home";
-import { QuemSomos } from "../Pages/QuemSomos";
-import { NotFound } from "../Pages/NotFound";
+import { QuemSomos } from "../QuemSomos/Index";
+import { NotFound } from "../QuemSomos/NotFound";
 
 
 
 export const Root = () => {
     return (
         <>
-            {/* {/* <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<RenderizacaoCondicional />} />
-                    <Route path="/addlista" element={<AdicionarLista />} />
-                </Routes>
-            </BrowserRouter> /} */}
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />
