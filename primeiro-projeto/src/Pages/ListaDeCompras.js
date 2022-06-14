@@ -1,17 +1,14 @@
 import React from "react";
+import { Lista ,Span} from "../TarefaDeCasa/style";
 
-export const ListaDeCompras = (props) =>{
-
-  
-
-    return(
-        <>
-        <h1>Lista de compras:</h1>
-            {props.lista.map(res =>(
-                <div>
-                    <span>{res}</span>
-                </div>
-            ))}
-        </>
-    )
-}
+export const ListaDeCompras = (props) => {
+  return (
+    <>
+      <Lista>
+        {props.lista.map((res) => (
+          <Span>{res}</Span>
+        ))}{" "}
+      </Lista>
+    </>
+  );
+};

@@ -1,8 +1,11 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home } from "../Pages/Home";
-import { QuemSomos } from "../QuemSomos/Index";
-import { NotFound } from "../QuemSomos/NotFound";
+// import { Home } from "../Pages/Home";
+// import { QuemSomos } from "../QuemSomos/Index";
+// import { NotFound } from "../QuemSomos/NotFound";
+import { TelaInicial } from "../TarefaDeCasa/TelaInicial";
+import { SegundaTela } from "../TarefaDeCasa/SegundaTela";
+import { NotFound } from "../TarefaDeCasa/NotFound";
 
 
 
@@ -11,9 +14,9 @@ export const Root = () => {
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<TelaInicial />} />
                     <Route path="" element={<NotFound/>}></Route>
-                    <Route path="/quemsomos/:nome/:idade" element={<QuemSomos />} />
+                    <Route path="/segundatela/:nome/:idade" element={<SegundaTela />} />
                 </Routes>
             </BrowserRouter>
         </>
