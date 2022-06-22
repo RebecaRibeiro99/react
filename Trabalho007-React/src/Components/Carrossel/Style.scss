@@ -1,0 +1,15 @@
+.carousel-item{
+    img{
+        height: 400px;
+        object-fit: contain;
+    }
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #333 !important;
+   
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: brightness(0.2) !important;
+}

@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import {FirstText, SecondText, Container, AulaButton} from "./style"
 import {AdicionarLista} from "../Pages/AcicionarLista"
 
+
 export const QuemSomos = () =>{
+
+    
 
     var {nome} = useParams()
     var {idade} = useParams()
